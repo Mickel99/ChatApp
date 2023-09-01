@@ -1,0 +1,105 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+
+.container {
+  text-align: center;
+  margin-top: 100px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#chatScreen {
+  display: none;
+}
+
+#roomList {
+  margin-bottom: 20px;
+}
+
+#chat {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  max-height: 400px; /* Adjust as needed */
+  padding: 10px;
+  background-color: #f9f9f9;
+}
+
+.sent-message {
+  text-align: right;
+}
+
+.received-message {
+  text-align: left;
+}
+
+#chat p {
+  margin: 10px 0;
+  word-wrap: break-word;
+  padding: 5px;
+}
+
+.sent-message p,
+.received-message p {
+  background-color: #007bff;
+  color: white;
+  border-radius: 10px;
+  padding: 10px;
+  display: inline-block;
+  max-width: 70%;
+}
+
+.received-message p {
+  background-color: #f9f9f9;
+  color: black;
+}
+
+.active {
+  font-weight: bold;
+  color: #007bff;
+}
+
+input[type="text"],
+button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin: 5px;
+  font-size: 14px;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+#messageBox {
+  display: flex;
+  align-items: center;
+}
+
+#message {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+#sendButton {
+  margin-left: 10px;
+}
+
+#typingIndicator {
+  font-style: italic;
+  color: #999;
+}
